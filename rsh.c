@@ -61,7 +61,7 @@ int main() {
 		posix_spawnattr_init(&attr);
 
 		if(isAllowed(command) != 1) {
-			printf("NOT ALLOWED\n");
+			printf("NOT ALLOWED!\n");
 		} else {
 			//Spawn process for first nine commands
 			if(isAllowed(command) && strcmp(command,"cd")!=0 && strcmp(command,"exit")!=0 && strcmp(command,"help")!=0) {
